@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karta Papito | Latin Band</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="bg-white h-full flex flex-col">
+      <!-- Navbar -->
+      <header>
+        <nav class="bg-gray-800 p-4 relative">
+          <div class="container mx-auto flex items-center justify-between">
+            <!-- Logo on the top left -->
+            <div class="flex-shrink-0">
+              <img
+                src="https://placehold.co/50x50"
+                alt="Band Logo"
+                class="h-10 w-10"
+              />
+            </div>
+
+            <!-- Burger Menu Icon (visible only on very small screens) -->
+            <div class="flex sm:hidden">
+              <button type="button" class="text-white focus:outline-none">
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Centered Navigation Menu (visible on small screens and larger) -->
+            <div class="hidden sm:flex flex-grow justify-center">
+              <ul class="flex space-x-6">
+                <li>
+                  <a href="#" class="text-white hover:text-gray-300"
+                    >Concerts</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white hover:text-gray-300"
+                    >The Band</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Empty space on the top right -->
+            <div class="flex-shrink-0 w-10 hidden sm:block"></div>
+          </div>
+
+          <!-- Mobile Menu (hidden by default, visible only on very small screens) -->
+          <div
+            id="mobile-menu"
+            class="hidden sm:hidden absolute top-16 left-0 right-0 bg-gray-800 p-4 shadow-lg"
+          >
+            <ul class="flex flex-col space-y-4">
+              <li>
+                <a href="#" class="block text-white hover:text-gray-300"
+                  >Concerts</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block text-white hover:text-gray-300"
+                  >The Band</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Main Content -->
+      <main
+        class="h-screen flex items-center justify-center bg-cover bg-center relative"
+        style="background-image: url('https://placehold.it/1500x800')"
+      >
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <!-- Dark overlay -->
+        <div class="relative z-10 text-center text-white px-6">
+          <h1 class="text-5xl font-bold sm:text-6xl">Karta Papito</h1>
+          <h2 class="mt-4 text-lg">Krakow's Cumbia</h2>
+          <a
+            href="#concerts"
+            class="mt-6 inline-block px-8 py-3 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700 transition"
+          >
+            Listen Now
+          </a>
+        </div>
+      </main>
+
+      <!-- Concerts Section -->
+      <section id="concerts" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-8">Upcoming Shows</h2>
+
+          <ul class="max-w-3xl mx-auto space-y-4">
+            <!-- Krakow -->
+            <li
+              class="flex flex-col md:flex-row items-center py-3 border-b px-2"
+            >
+              <div
+                class="w-full md:w-1/4 text-gray-600 text-sm mb-1 md:mb-0 text-center"
+              >
+                15 Oct 2023
+              </div>
+              <div class="w-full md:w-1/2 mb-2 md:mb-0 text-center">
+                <p class="font-medium">Krakow, POLAND</p>
+                <p class="text-gray-600 text-sm">Krakow Arena</p>
+              </div>
+              <div class="w-full md:w-1/4 text-center md:text-center">
+                <span class="text-gray-500 text-sm md:text-base"
+                  >Tickets at the door</span
+                >
+              </div>
+            </li>
+
+            <!-- Katowice -->
+            <li
+              class="flex flex-col md:flex-row items-center py-3 border-b px-2"
+            >
+              <div
+                class="w-full md:w-1/4 text-gray-600 text-sm mb-1 md:mb-0 text-center"
+              >
+                20 Oct 2023
+              </div>
+              <div class="w-full md:w-1/2 mb-2 md:mb-0 text-center">
+                <p class="font-medium">Katowice, POLAND</p>
+                <p class="text-gray-600 text-sm">Spodek Arena</p>
+              </div>
+              <div class="w-full md:w-1/4 text-center">
+                <a
+                  href="#"
+                  class="inline-block px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition text-sm md:text-base mx-auto"
+                >
+                  Buy Tickets
+                </a>
+              </div>
+            </li>
+
+            <!-- Warsaw -->
+            <li
+              class="flex flex-col md:flex-row items-center py-3 border-b px-2"
+            >
+              <div
+                class="w-full md:w-1/4 text-gray-600 text-sm mb-1 md:mb-0 text-center"
+              >
+                25 Oct 2023
+              </div>
+              <div class="w-full md:w-1/2 mb-2 md:mb-0 text-center">
+                <p class="font-medium">Warsaw, POLAND</p>
+                <p class="text-gray-600 text-sm">National Stadium</p>
+              </div>
+              <div class="w-full md:w-1/4 text-center">
+                <a
+                  href="#"
+                  class="inline-block px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition text-sm md:text-base mx-auto"
+                >
+                  Buy Tickets
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-gray-800 p-4 text-white text-center">
+        <p>&copy; 2025 Karta Papito. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="./js/main.js" defer></script>
+  </body>
+</html>
