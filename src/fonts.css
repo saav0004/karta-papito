@@ -1,3 +1,8 @@
 .custom-font {
   font-family: "Magiel-Black";
 }
+
+.custom-font-text {
+  font-family: "Rewir-Light";
+  letter-spacing: 0.05em;
+}
