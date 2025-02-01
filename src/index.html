@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,8 +12,8 @@
       <header>
         <nav class="bg-gray-800 p-4 relative">
           <div class="container mx-auto flex items-center justify-between">
-            <!-- Logo on the top left -->
-            <div class="flex-shrink-0">
+            <!-- Logo on the top left for large screen -->
+            <div class="flex-shrink-0 hidden sm:block">
               <img
                 src="https://placehold.co/50x50"
                 alt="Band Logo"
@@ -21,70 +21,63 @@
               />
             </div>
 
-            <!-- Burger Menu Icon (visible only on very small screens) -->
-            <div class="flex sm:hidden">
-              <button type="button" class="text-white focus:outline-none">
-                <svg
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  />
-                </svg>
-              </button>
-            </div>
-
-            <!-- Centered Navigation Menu (visible on small screens and larger) -->
+            <!-- Centered Navigation Menu for larger screens -->
             <div class="hidden sm:flex flex-grow justify-center">
               <ul class="flex space-x-6">
                 <li>
-                  <a href="#" class="text-white hover:text-gray-300"
-                    >Concerts</a
-                  >
+                  <a href="#concerts" class="text-white hover:text-gray-300">
+                    Concerts
+                  </a>
                 </li>
                 <li>
-                  <a href="#" class="text-white hover:text-gray-300"
-                    >The Band</a
-                  >
+                  <a href="#" class="text-white hover:text-gray-300">
+                    The Band
+                  </a>
                 </li>
               </ul>
             </div>
 
-            <!-- Empty space on the top right -->
+            <!-- Empty space on the top right for large screen -->
             <div class="flex-shrink-0 w-10 hidden sm:block"></div>
           </div>
 
-          <!-- Mobile Menu (hidden by default, visible only on very small screens) -->
-          <div
-            id="mobile-menu"
-            class="hidden sm:hidden absolute top-16 left-0 right-0 bg-gray-800 p-4 shadow-lg"
-          >
-            <ul class="flex flex-col space-y-4">
-              <li>
-                <a href="#" class="block text-white hover:text-gray-300"
-                  >Concerts</a
-                >
-              </li>
-              <li>
-                <a href="#" class="block text-white hover:text-gray-300"
-                  >The Band</a
-                >
-              </li>
-            </ul>
+          <!-- Mobile Version -->
+          <div class="sm:hidden flex flex-col items-center">
+            <!-- Logo centered for mobile -->
+            <div class="flex-shrink-0 mb-4">
+              <img
+                src="https://placehold.co/50x50"
+                alt="Band Logo"
+                class="h-10 w-10"
+              />
+            </div>
+
+            <!-- Mobile Menu (visible on mobile screens) -->
+            <div class="w-full text-center">
+              <ul class="space-y-4">
+                <li>
+                  <a
+                    href="#concerts"
+                    class="text-white hover:text-gray-300 text-lg"
+                  >
+                    Concerts
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-white hover:text-gray-300 text-lg">
+                    The Band
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </header>
 
       <!-- Main Content -->
       <main
-        class="h-screen flex items-center justify-center bg-cover bg-center relative"
-        style="background-image: url('https://placehold.it/1500x800')"
+        class="h-[50vh] sm:h-[80vh] flex items-center justify-center bg-cover bg-center relative"
+        style="background-image: url('./images/banner.jpeg')"
       >
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <!-- Dark overlay -->
@@ -103,7 +96,7 @@
       <!-- Concerts Section -->
       <section id="concerts" class="py-12 bg-white">
         <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold text-center mb-8">Upcoming Shows</h2>
+          <h2 class="text-3xl font-bold text-center mb-8">Upcoming Concerts</h2>
 
           <ul class="max-w-3xl mx-auto space-y-4">
             <!-- Krakow -->
