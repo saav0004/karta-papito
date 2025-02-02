@@ -84,11 +84,15 @@
 
       <!-- Main Content -->
       <main
-        class="h-[50vh] sm:h-[95vh] flex items-center justify-center bg-cover bg-center relative"
-        style="background-image: url('./src/images/banner.jpeg')"
+        class="h-[50vh] sm:h-[95vh] flex items-center justify-center relative"
       >
+        <img
+          src="./src/images/banner.jpeg"
+          alt="Karta Papito Banner"
+          class="absolute inset-0 w-full h-full object-cover"
+          loading="lazy"
+        />
         <div class="absolute inset-0 bg-black opacity-65"></div>
-        <!-- Dark overlay -->
         <div class="relative z-10 text-center text-white px-6">
           <h1
             class="custom-font text-5xl font-bold sm:text-9xl text-yellow-400"
@@ -100,16 +104,9 @@
           >
             Krakow's Latin Vibes
           </h2>
-          <!-- <a
-              href="#concerts"
-              class="mt-6 inline-block px-8 py-3 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700 transition"
-            >
-              Listen Now
-            </a> -->
         </div>
       </main>
 
-      <!-- Concerts Section -->
       <!-- Concerts Section -->
       <section id="concerts" class="py-12 bg-gray-800">
         <div class="container mx-auto px-4">
