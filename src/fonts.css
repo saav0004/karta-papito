@@ -1,4 +1,11 @@
+h1,
+h2,
+h3 {
+  user-select: none; /* Prevents text selection */
+  cursor: default; /* Keeps the cursor as the default arrow */
+}
 /* Define the first custom font */
+
 @font-face {
   font-family: "Magiel-Black";
   src: url("./assets/fonts/Magiel-Black.woff") format("woff");
