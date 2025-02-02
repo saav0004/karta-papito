@@ -1,3 +1,19 @@
+/* Define the first custom font */
+@font-face {
+  font-family: "Magiel-Black";
+  src: url("./assets/fonts/Magiel-Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Define the second custom font */
+@font-face {
+  font-family: "Rewir-Light";
+  src: url("./assets/fonts/Rewir-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .custom-font {
   font-family: "Magiel-Black";
 }
@@ -5,8 +21,4 @@
 .custom-font-text {
   font-family: "Rewir-Light";
   letter-spacing: 0.05em;
-}
-
-.font-concerts {
-  font-family: "Lato";
 }
